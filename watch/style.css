@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+
+#hero {
+    padding: 81px 0 171px 0;
+    background: rgba(248, 248, 248, 1);
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 366px;
+        height: 645px;
+    }
+}
+
+.hero-text {
+    h4 {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    h1 {
+        font-size: 250px;
+        font-weight: 300;
+        margin: 31px 0 25px 0;
+    }
+
+    p {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 49.6px;
+        margin-bottom: 61px;
+    }
+
+    .btn-left {
+        width: 278px;
+        height: 82px;
+        font-size: 32px;
+        background: black;
+        color: white;
+        border: none;
+        outline: none;
+        font-weight: 300;
+    }
+
+    .btn-right {
+        width: 143px;
+        height: 82px;
+        font-size: 32px;
+        background: white;
+        color: black;
+        border: none;
+        outline: none;
+        font-weight: 300;
+    }
+}
+
+/* HERO SECTION */
+
+/* MODELS */
+
+#models {
+    padding: 42px 0 142px 0;
+}
+
+.models {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 17px;
+    }
+
+    h2 {
+        font-size: 72px;
+        font-weight: 400;
+    }
+
+    div {
+        width: 417px;
+        height: 630px;
+        background: rgba(248, 248, 248, 1);
+        display: flex;
+        align-items: center;
+        margin: 87px 0 64px 0;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+
+    p {
+        font-size: 32px;
+        color: rgba(22, 21, 21, 1);
+        font-weight: 300;
+        line-height: 49.6px;
+        text-align: center;
+        margin-bottom: 85px;
+    }
+    hr {
+        width: 178px;
+        height: 1px;
+        background: black;
+    }
+}
+
+.lastText {
+    margin-top: 40px;
+    span {
+        font-weight: 900;
+        color: rgba(165, 42, 42, 0.418);
+        text-decoration: underline;
+    }
+}
+
+/* MODELS */
