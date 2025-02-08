@@ -41,15 +41,15 @@
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
-let firstNum = +prompt("Введите первое число");
-let secondNum = +prompt("Введите второе число");
-let res = firstNum + secondNum;
-if (res > 10 && res < 20) {
-  console.log(res * 5);
-}
-if (res > 20 && res < 50) {
-  console.log(res / 3);
-}
+// let firstNum = +prompt("Введите первое число");
+// let secondNum = +prompt("Введите второе число");
+// let res = firstNum + secondNum;
+// if (res > 10 && res < 20) {
+//   console.log(res * 5);
+// }
+// if (res > 20 && res < 50) {
+//   console.log(res / 3);
+// }
 
 //TODO Задание №3
 // Напишите функцию checkTask(input), которая принимает в переменную input строку и возвращает ее в виде нумеронима.
@@ -65,6 +65,21 @@ if (res > 20 && res < 50) {
 // Используйте методы split(), map(), join()
 
 //? ПИСАТЬ КОД ЗДЕСЬ
+
+let str =
+  "Сложный путь у программиста, Только горе - не беда, Если выбрал путь тернистый - То тогда тебе - сюда!";
+
+function checkTask(input) {
+  return input
+    .split(" ")
+    .map((el) =>
+      el.length >= 4
+        ? el[0] + el.slice(1, el.length - 1).length + el[el.length - 1]
+        : el
+    );
+}
+
+console.log(checkTask(str));
 
 //TODO Задание №4
 // Создайте функцию checkTask(arr), которая принимает в аргументы массив состоящий из строк и выводит
