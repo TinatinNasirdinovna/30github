@@ -66,20 +66,20 @@
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
-let str =
-  "Сложный путь у программиста, Только горе - не беда, Если выбрал путь тернистый - То тогда тебе - сюда!";
+// let str =
+//   "Сложный путь у программиста, Только горе - не беда, Если выбрал путь тернистый - То тогда тебе - сюда!";
 
-function checkTask(input) {
-  return input
-    .split(" ")
-    .map((el) =>
-      el.length >= 4
-        ? el[0] + el.slice(1, el.length - 1).length + el[el.length - 1]
-        : el
-    );
-}
+// function checkTask(input) {
+//   return input
+//     .split(" ")
+//     .map((el) =>
+//       el.length >= 4
+//         ? el[0] + el.slice(1, el.length - 1).length + el[el.length - 1]
+//         : el
+//     );
+// }
 
-console.log(checkTask(str));
+// console.log(checkTask(str));
 
 //TODO Задание №4
 // Создайте функцию checkTask(arr), которая принимает в аргументы массив состоящий из строк и выводит
@@ -94,6 +94,11 @@ console.log(checkTask(str));
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
+// function checkTask(arr) {
+//   return arr.map((el) => el[0] + el[el.length - 1]);
+// }
+// console.log(checkTask(["hi", "goodbye", "smile"]));
+
 //TODO Задание №5
 // Напишите функцию removeElem(arr, element), которая принимает 2 аргумента.
 // Первый аргумент- это массив.
@@ -103,6 +108,12 @@ console.log(checkTask(str));
 // Ответ: [2, ‘hello’, true,  5, ‘js’]
 
 //? ПИСАТЬ КОД ЗДЕСЬ
+
+function removeElem(arr, element) {
+  return arr.filter((el) => el !== element);
+}
+
+console.log(removeElem([2, "hello", true, "world", 5, "js"], "world"));
 
 //TODO Задание №6
 // Напишите функцию palindrom(word), принимающая один аргумент word.
