@@ -134,11 +134,11 @@
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
-function palindrom(word) {
-  return word.split("").reverse().join("") == word;
-}
+// function palindrom(word) {
+//   return word.split("").reverse().join("") == word;
+// }
 
-console.log(palindrom("twret"));
+// console.log(palindrom("tenet"));
 
 //TODO Задание №7
 // Дан лимит = 1000, напишите функцию, которая будет выводить в консоль удвоенное значение аргумента до тех пор, пока оно не достигнет лимита, и после этого вывести в консоль аргументы в обратном порядке (использовать цикл while)
