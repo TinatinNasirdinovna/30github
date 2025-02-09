@@ -109,11 +109,11 @@
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
-function removeElem(arr, element) {
-  return arr.filter((el) => el !== element);
-}
+// function removeElem(arr, element) {
+//   return arr.filter((el) => el !== element);
+// }
 
-console.log(removeElem([2, "hello", true, "world", 5, "js"], "world"));
+// console.log(removeElem([2, "hello", true, "world", 5, "js"], "world"));
 
 //TODO Задание №6
 // Напишите функцию palindrom(word), принимающая один аргумент word.
@@ -133,6 +133,12 @@ console.log(removeElem([2, "hello", true, "world", 5, "js"], "world"));
 // Вывод: false
 
 //? ПИСАТЬ КОД ЗДЕСЬ
+
+function palindrom(word) {
+  return word.split("").reverse().join("") == word;
+}
+
+console.log(palindrom("twret"));
 
 //TODO Задание №7
 // Дан лимит = 1000, напишите функцию, которая будет выводить в консоль удвоенное значение аргумента до тех пор, пока оно не достигнет лимита, и после этого вывести в консоль аргументы в обратном порядке (использовать цикл while)
