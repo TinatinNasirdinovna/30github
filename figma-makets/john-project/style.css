@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 24px 0;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        nav {
+            display: flex;
+            gap: 50px;
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* Hero style */
+
+#hero {
+    padding: 160px 0 80px 0;
+
+    .hero {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .hero-text {
+            h1 {
+                font-size: 44px;
+                font-weight: 700;
+                line-height: 60px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23.5px;
+                padding: 40px 0;
+            }
+
+            button {
+                width: 208px;
+                height: 47px;
+                border-radius: 2px;
+                background: #FF6464;
+                color: white;
+                border: none;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* POsts style */
+
+#posts {
+    background: #EDF7FA;
+    padding: 30px 0;
+
+    .posts {
+        .post-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                color: #00A8CC;
+                text-decoration: none;
+            }
+        }
+
+        .blocks {
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: space-between;
+
+            .block {
+                width: 418px;
+                height: 295px;
+                border-radius: 4px;
+                box-shadow: 0px 4px 10px 0px #BBE1FA40;
+                background: #FFFFFF;
+                padding: 24px;
+                color: #21243D;
+                border-radius: 4px;
+
+                h2 {
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin: 20px 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 23.5px;
+                }
+            }
+        }
+    }
+}
