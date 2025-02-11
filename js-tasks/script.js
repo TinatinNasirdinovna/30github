@@ -192,20 +192,31 @@
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
-function checkTask(num) {
-  let letter = "abcdefghijklmnopqrstuvwxyz0123456789";
-  let pass = "";
-  for (let i = 0; i < num; i++) {
-    pass += letter[Math.floor(Math.random() * letter.length)];
-  }
-  return pass;
-}
+// function checkTask(num) {
+//   let letter = "abcdefghijklmnopqrstuvwxyz0123456789";
+//   let pass = "";
+//   for (let i = 0; i < num; i++) {
+//     pass += letter[Math.floor(Math.random() * letter.length)];
+//   }
+//   return pass;
+// }
 
-console.log(checkTask(8));
+// console.log(checkTask(8));
 
 //TODO Задание №9
 // Дан объект преобразуйте в строку.
-// let obj = { a: 1, b: 2 } => a = 1, b = 2
+// let obj = { a: 1, b: 2 }; =>a = 1,b = 2;
+
+// let str = JSON.stringify(obj);
+
+let obj = { a: 1, b: 2 };
+let str = Object.entries(obj)
+  .map(([key, value]) => `${key} = ${value}`)
+  .join(", ");
+
+console.log(str); // 'a = 1, b = 2'
+// console.log(str); // '{"a":1,"b":2}'
+// console.log(Object.entries(obj).join());
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
