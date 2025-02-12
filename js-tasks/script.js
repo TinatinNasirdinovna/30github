@@ -209,12 +209,12 @@
 
 // let str = JSON.stringify(obj);
 
-let obj = { a: 1, b: 2 };
-let str = Object.entries(obj)
-  .map(([key, value]) => `${key} = ${value}`)
-  .join(", ");
+// let obj = { a: 1, b: 2 };
+// let str = Object.entries(obj)
+//   .map(([key, value]) => `${key} = ${value}`)
+//   .join(", ");
 
-console.log(str); // 'a = 1, b = 2'
+// console.log(str); // 'a = 1, b = 2'
 // console.log(str); // '{"a":1,"b":2}'
 // console.log(Object.entries(obj).join());
 
@@ -228,10 +228,23 @@ console.log(str); // 'a = 1, b = 2'
 // let task5 = [4, 5, 5, 5, 3, 5, 2, 3, 1, 3, 4];
 
 //? ПИСАТЬ КОД ЗДЕСЬ
+// function maxFrequency(arr) {
+//   let obj = {};
+//   let maxElem = 0;
+//   for (let num of arr) {
+//     obj[num] = (obj[num] || 0) + 1;
+//     maxElem = Math.max(maxElem, obj[num]);
+//   }
+//   return maxElem;
+// }
+
+// let task5 = [4, 5, 5, 5, 3, 5, 2, 3, 1, 3, 4];
+// console.log(maxFrequency(task5));
 
 //TODO Задание №11
 // Дан массив nums = [8,1,2,2,3]
-// Напишите функцию, которая будет возвращать массив, в котором указано сколько есть чисел в массиве меньше, чем каждый элемент массива.
+// Напишите функцию, которая будет возвращать массив, в котором указано сколько есть чисел в массиве меньше,
+//  чем каждый элемент массива.
 // Используйте метод map()
 // Пример №1:
 // Ввод: nums = [8,1,2,2,3]
@@ -248,6 +261,30 @@ console.log(str); // 'a = 1, b = 2'
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
+// function checkTask(arr) {
+//   return arr.map((el) => arr.filter((item) => el > item).length);
+// }
+// let nums = [8, 1, 2, 2, 3];
+// console.log(checkTask(nums));
+
+// function checkTask(arr) {
+//   let count = 0;
+//   let arr2 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     count = 0;
+//     for (let j = 0; j < arr.length; j++) {
+//       if (arr[i] > arr[j]) {
+//         count++;
+//       }
+//     }
+//     arr2.push(count);
+//   }
+//   return arr2;
+// }
+
+// let nums = [8, 1, 2, 2, 3];
+// console.log(checkTask(nums));
+
 //TODO Задание №12
 // Вам нужно поменять местами значения
 // переменных при помощи деструктуризации.
@@ -257,6 +294,11 @@ console.log(str); // 'a = 1, b = 2'
 // console.log(a, b); // 1, 0
 
 //? ПИСАТЬ КОД ЗДЕСЬ
+// let a = 1;
+// let b = 0;
+
+// [a, b] = [b, a];
+// console.log(a, b);
 
 //TODO Задание №13
 // Создайте функцию checkTask(arr), принимающую в аргументы массив вида:
@@ -276,6 +318,19 @@ console.log(str); // 'a = 1, b = 2'
 
 //? ПИСАТЬ КОД ЗДЕСЬ
 
+// const users = [
+//   { user: "Jon Snow", age: 20 },
+//   { user: "Jane Eyre", age: 21 },
+//   { user: "Bruce Wayne", age: 17 },
+//   { user: "Dani Targaryen", age: 18 },
+// ];
+// function checkTask(arr) {
+//   for (let { user, age } of arr) {
+//     console.log(user, age);
+//   }
+// }
+// checkTask(users);
+
 //TODO Задание №14
 
 // Создать функцию checkTask, которая будет принимать в качестве аргумента строку, а затем
@@ -285,6 +340,16 @@ console.log(str); // 'a = 1, b = 2'
 // console.log(checkTask('Hello'))
 // {'H': 1, 'e': 1, 'l': 2, 'o': 1}
 //? ПИСАТЬ КОД ЗДЕСЬ
+
+// const checkTask = (str) => {
+//   let obj = {};
+//   for (let i in str) {
+//     obj[str[i]] = (obj[str[i]] || 0) + 1;
+//   }
+//   return obj;
+// };
+
+// console.log(checkTask("Hello"));
 
 //TODO Задание №15
 // Расчет премии сотрудникам, дан массив с объектами
@@ -307,15 +372,29 @@ console.log(str); // 'a = 1, b = 2'
 // [{name: 'Jack', salary: 10800}]
 //? ПИСАТЬ КОД ЗДЕСЬ
 
+// let employees = [
+//   { name: "Jack", salary: 10000, overTime: 4 },
+//   { name: "Tom", salary: 15000, overTime: 3 },
+//   { name: "Jessica", salary: 20000, overTime: 9 },
+//   { name: "Helen", salary: 25000, overTime: 2 },
+//   { name: "Peter", salary: 30000, overTime: 7 },
+// ];
+
+// let new_arr = employees.map((el) => {
+//   return { ...el, salary: el.salary + 200 * el.overTime };
+// });
+
+// console.log(new_arr);
+
 //TODO Задание №16
 // Дан массив с объектами
 // let users = [
-//   { name: 'Jack', age: 35, work: 'IT-backend developer' },
-//   { name: 'Helen', age: 35, work: 'Nurse' },
-//   { name: 'Bob', age: 35, work: 'Driver' },
-//   { name: 'Jessica', age: 35, work: 'IT-frontend developer' },
-//   { name: 'Helga', age: 35, work: 'IT-HR' }
-// ]
+//   { name: "Jack", age: 35, work: "IT-backend developer" },
+//   { name: "Helen", age: 35, work: "Nurse" },
+//   { name: "Bob", age: 35, work: "Driver" },
+//   { name: "Jessica", age: 35, work: "IT-frontend developer" },
+//   { name: "Helga", age: 35, work: "IT-HR" },
+// ];
 // Задача, создать функцию checkTask, которая будет рассылать сообщения пользователям,
 // сообщая о акции в магазине компьютерной техники, отправлять сообщения нужно только
 // тем людям, которые тем или иным образом относятся к IT-сфере
@@ -323,3 +402,33 @@ console.log(str); // 'a = 1, b = 2'
 
 // "Здравствуйте ${name}, в магазине Sulpak идет акция скидка на все ноутбуки 10%"
 //? ПИСАТЬ КОД ЗДЕСЬ
+
+// function checkTask(users) {
+//   for (let { name, work } of users) {
+//     if (work.includes("IT")) {
+//       console.log(
+//         `Здравствуйте ${name}, в магазине Sulpak идет акция скидка на все ноутбуки 10%`
+//       );
+//     }
+//   }
+// }
+
+let users = [
+  { name: "Jack", age: 35, work: "IT-backend developer" },
+  { name: "Helen", age: 35, work: "Nurse" },
+  { name: "Bob", age: 35, work: "Driver" },
+  { name: "Jessica", age: 35, work: "IT-frontend developer" },
+  { name: "Helga", age: 35, work: "IT-HR" },
+];
+
+// checkTask(users);
+
+let arr2 = users.map((el) => {
+  return {
+    ...el,
+    sms: el.work.includes("IT")
+      ? `Здравствуйте ${el.name}, в магазине Sulpak идет акция скидка на все ноутбуки 10%`
+      : "",
+  };
+});
+console.log(arr2);
