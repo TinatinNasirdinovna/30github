@@ -413,22 +413,22 @@
 //   }
 // }
 
-let users = [
-  { name: "Jack", age: 35, work: "IT-backend developer" },
-  { name: "Helen", age: 35, work: "Nurse" },
-  { name: "Bob", age: 35, work: "Driver" },
-  { name: "Jessica", age: 35, work: "IT-frontend developer" },
-  { name: "Helga", age: 35, work: "IT-HR" },
-];
+// let users = [
+//   { name: "Jack", age: 35, work: "IT-backend developer" },
+//   { name: "Helen", age: 35, work: "Nurse" },
+//   { name: "Bob", age: 35, work: "Driver" },
+//   { name: "Jessica", age: 35, work: "IT-frontend developer" },
+//   { name: "Helga", age: 35, work: "IT-HR" },
+// ];
 
-// checkTask(users);
+// // checkTask(users);
 
-let arr2 = users.map((el) => {
-  return {
-    ...el,
-    sms: el.work.includes("IT")
-      ? `Здравствуйте ${el.name}, в магазине Sulpak идет акция скидка на все ноутбуки 10%`
-      : "",
-  };
-});
-console.log(arr2);
+// let arr2 = users.map((el) => {
+//   return {
+//     ...el,
+//     sms: el.work.includes("IT")
+//       ? `Здравствуйте ${el.name}, в магазине Sulpak идет акция скидка на все ноутбуки 10%`
+//       : "",
+//   };
+// });
+// console.log(arr2);
