@@ -16,6 +16,13 @@
 //     }
 //   };
 
+// ?  Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+// An input string is valid if:
+
+// Open brackets must be closed by the same type of brackets.
+// Open brackets must be closed in the correct order.
+// Every close bracket has a corresponding open bracket of the same type.
 // var isValid = function(s) {
 //     let stack = [];
 //     let map = {
@@ -38,3 +45,11 @@
 
 //     return stack.length === 0;
 // };
+
+// ? Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+// Example 1:
+
+// Input: strs = ["eat","tea","tan","ate","nat","bat"]
+
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
