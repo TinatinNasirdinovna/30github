@@ -53,3 +53,22 @@
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
 
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+// const groupAnagrams = function (strs) {
+//     let groups = {}
+//     strs.forEach(el => {
+//       let key  = el.split("").sort().join()
+//       if(!groups[key]) {
+//           groups[key] = []
+//       }
+//       groups[key].push(el)
+//     })
+//     return Object.values(groups)
+//   };
+
+// ?
+
+// const majorityElement = function (nums) {
+//     nums.sort()
+//    return nums[Math.floor(nums.length / 2)]
+//  };
