@@ -83,3 +83,27 @@
 //     nums.sort()
 //    return nums[Math.floor(nums.length / 2)]
 //  };
+
+// ?
+
+const isValid = function (s) {
+  let stack = [];
+  let map = {
+    "(": ")",
+    "{": "}",
+    "[": "]",
+  };
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i];
+    if (map[char]) {
+      stack.push(char);
+    } else {
+      let last = stack.pop();
+      if (map[last] !== char) {
+        return false;
+      }
+    }
+  }
+
+  return stack.length === 0;
+};
