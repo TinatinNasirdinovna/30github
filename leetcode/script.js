@@ -84,26 +84,34 @@
 //    return nums[Math.floor(nums.length / 2)]
 //  };
 
-// ?
+// ? Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-const isValid = function (s) {
-  let stack = [];
-  let map = {
-    "(": ")",
-    "{": "}",
-    "[": "]",
-  };
-  for (let i = 0; i < s.length; i++) {
-    let char = s[i];
-    if (map[char]) {
-      stack.push(char);
-    } else {
-      let last = stack.pop();
-      if (map[last] !== char) {
-        return false;
-      }
-    }
-  }
+// An input string is valid if:
 
-  return stack.length === 0;
-};
+// Open brackets must be closed by the same type of brackets.
+// Open brackets must be closed in the correct order.
+// Every close bracket has a corresponding open bracket of the same type.
+
+// const isValid = function (s) {
+//   let stack = [];
+//   let map = {
+//     "(": ")",
+//     "{": "}",
+//     "[": "]",
+//   };
+//   for (let i = 0; i < s.length; i++) {
+//     let char = s[i];
+//     if (map[char]) {
+//       stack.push(char);
+//     } else {
+//       let last = stack.pop();
+//       if (map[last] !== char) {
+//         return false;
+//       }
+//     }
+//   }
+
+//   return stack.length === 0;
+// };
+
+
