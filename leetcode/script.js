@@ -138,9 +138,9 @@
 
 // ?
 
-let nam = "Tinatin";
-let res = "";
-for (let i = 0; i < nam.length; i++) {
-  res += nam[i] + "-";
-}
-console.log(res);
+// let nam = "Tinatin";
+// let res = "";
+// for (let i = 0; i < nam.length; i++) {
+//   res += nam[i] + "-";
+// }
+// console.log(res);
