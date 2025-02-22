@@ -144,3 +144,19 @@
 //   res += nam[i] + "-";
 // }
 // console.log(res);
+
+// ?
+// Напишите программу JavaScript, которая принимает строку в качестве входных данных и
+//  меняет регистр каждого символа. Например, если вы вводите «The Quick Brown Fox»,
+// то на выходе должно быть «tHE QUICK BROWN FOX».
+
+function task(str) {
+  return str
+    .split("")
+    .map((el) =>
+      el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase()
+    )
+    .join("");
+}
+
+console.log(task("The Quick Brown Fox"));
