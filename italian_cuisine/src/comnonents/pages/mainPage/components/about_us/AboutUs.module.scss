@@ -1,3 +1,43 @@
-#about {
-  padding: 100px 0;
+#aboutUs {
+  padding: 95px 0;
+  .aboutUs {
+    .title {
+      display: flex;
+      gap: 39px;
+      align-items: center;
+      h3 {
+        font-family: "Shalimar";
+        font-size: 40px;
+        font-weight: 400;
+      }
+    }
+    .text {
+      display: flex;
+      padding: 30px 0;
+      justify-content: space-between;
+      h2 {
+        font-family: "Silk", Serif;
+        font-size: 40px;
+        font-weight: 600;
+        width: 49%;
+        line-height: 61.36px;
+      }
+      p {
+        font-family: "Spartan";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        width: 49%;
+      }
+    }
+    .imgs {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 49%;
+        height: 500px;
+      }
+    }
+  }
 }
