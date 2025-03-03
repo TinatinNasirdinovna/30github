@@ -1,0 +1,66 @@
+#bestSellers {
+  padding: 135px 0;
+  .bestSellers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+      width: 49%;
+      .title {
+        display: flex;
+        gap: 39px;
+        align-items: center;
+        h2 {
+          font-family: "Shalimar";
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 48.8px;
+        }
+      }
+      h2 {
+        font-family: "Silk", Serif;
+        margin: 20px 0;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 61.36px;
+      }
+      p {
+        font-family: "Spartan";
+        width: 60%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    .slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 49%;
+      justify-content: end;
+      gap: 33px;
+      .imgWrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 22px;
+        .img {
+          img {
+            width: 266px;
+            height: 281px;
+          }
+        }
+      }
+      &.animating .imgWrapper {
+        transform: translateX(-100%);
+      }
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 33px;
+        color: grey;
+      }
+    }
+  }
+}
