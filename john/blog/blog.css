@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+    color: #21243D;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* header style */
+
+#header {
+    padding: 30px 0;
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+
+        nav {
+            display: flex;
+            gap: 38px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: Heebo;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            .active {
+                color: red;
+            }
+        }
+
+        span {
+            font-size: 30px;
+            display: none;
+        }
+    }
+}
+
+/* hero style */
+
+#hero {
+    padding: 100px 0;
+
+    .hero {
+        h1 {
+            font-weight: 700;
+            font-size: 44px;
+            margin-bottom: 55px;
+        }
+
+        .hero-cards {
+            .card {
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.741);
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                .date {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin: 16px 0;
+
+                    span {
+                        font-weight: 400;
+                        font-size: 20px;
+
+                        &:last-child {
+                            color: grey;
+                        }
+                    }
+
+
+                }
+
+                p {
+                    font-weight: 400;
+                    line-height: 25px;
+                    font-size: 16px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #header {
+        padding: 15px 0;
+
+        .header {
+            nav {
+                display: none;
+            }
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    #hero {
+        padding: 10px 0;
+
+        .hero {
+            h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .hero-cards {
+                .card {
+                    h2 {
+                        font-size: 26px;
+                    }
+
+                    .date {
+                        margin: 10px 0;
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
